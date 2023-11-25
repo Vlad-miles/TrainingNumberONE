@@ -1,2 +1,69 @@
 @import "./normalize";
 @import "./vars";
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Lato:wght@400;700;900&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #102746;
+}
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+/* Header styles */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+   padding-top: 56px;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__item{
+    margin-right: 82px;
+}
+.header__item:last-child{
+    margin-right: 0px;
+}
+.header__link{
+    font-size: 18px;
+    line-height: 24px; 
+    color: white;
+    text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: .75;
+}
+/* Header styles end*/
+
+
+/* Intro styles start*/
+
+.intro{
+    height: 100vh;
+    background: url(/img/intro-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+/* Intro styles start*/
