@@ -2,7 +2,10 @@
 @import "./vars";
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Lato:wght@400;700;900&display=swap');
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 html{
     box-sizing: border-box;
 }
@@ -62,6 +65,7 @@ body {
     background: url(/img/intro-bg.jpg) no-repeat;
     background-size: cover;
     padding-top: 263px;
+    padding-bottom: 376px;
 }
 .intro__title{
 max-width:619px;
@@ -120,6 +124,9 @@ margin-bottom: 59px;
 /* intro end*/
 
 /* benefits start*/
+.benefits{
+    margin-bottom: 131px;
+}
     .benefits__wrap{
         position: relative;
         max-width: 1262px;
@@ -137,13 +144,53 @@ margin-bottom: 59px;
         font-weight: 500;
         line-height: normal;
         padding: 93px 100px 88px 100px;
-        transform: translateY(-100%);
+        transform: translateY(-99%);
         background: #FFF;
+
     }
     .benefits__cards{
-        height: 30vh;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 55px;
+        padding: 0px 100px;
     }
     .benefits__card{
-        background: white;
+        grid-column: span 1;
+        margin-bottom: 112px;
+
+    }
+    .benedits__card-pic{
+     max-width: 67px;
+        margin-bottom: 37px;
+    }
+    .benedits__card-thumb{
+        display: block;
+    }
+    .benedits__card-title{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 26px;
+    }
+    .benedits__card-desc{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 39px;
+    }
+    .benedits__card-more{
+        display: inline-block;
+        padding-right: 59px;
+        color: #006DFE;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+        background:url(../img/svg/arrow-right-ico.svg) no-repeat 95% center;
+        transition: .2s all;
+
+    }
+    .benedits__card-more:hover,.benedits__card-more:focus{
+        background:url(../img/svg/arrow-right-ico.svg)no-repeat right center;
     }
     /* benefits end*/
